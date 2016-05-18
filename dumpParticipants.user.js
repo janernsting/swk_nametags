@@ -1,8 +1,8 @@
 (function() {
 var members = [];
 $.ajaxSetup({async: false});
-$(".member a:first-child").each(function(i, link) { 
-	$.get(link.href, function(userHtml) { 
+$(".member a:first-child").each(function(i, link) {
+	$.get(link.href, function(userHtml) {
 		var dom = $(userHtml);
 		var user = {};
 		dom.find("p").each(function(i, el) {
